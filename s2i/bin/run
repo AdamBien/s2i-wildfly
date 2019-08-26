@@ -1,0 +1,4 @@
+#!/bin/bash -e
+echo "### Starting WildFly with user id: $(id) and group $(id -G)"
+echo "### Starting at $(date)"
+exec ${WILDFLY_HOME}/bin/standalone.sh -b=0.0.0.0
